@@ -1,0 +1,25 @@
+
+# ---- Guess Game ----
+import random
+def get_inputs() :
+    try:
+        player_guess = int(input("Enter Your Guess : "))
+        computer_guess = random.randint(0,10)
+        print(f"computer guess is {computer_guess}")
+        return player_guess,computer_guess
+    except ValueError:
+        print("ValueError")
+        exit()
+
+player_g,computer_g = get_inputs()
+
+if player_g == computer_g:
+    print("You won")
+
+
+while player_g != computer_g :
+    print (get_inputs())
+    break
+
+
+

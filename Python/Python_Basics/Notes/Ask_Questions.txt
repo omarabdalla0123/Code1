@@ -1,0 +1,6 @@
+in the basic quiz game :
+
+1. i want the system to ask the user and give him choices 
+2. i want the user to be able to answer the question 
+3. i want the systme to check if the answer is correct or not 
+4. i want the systme to count the scores and show it on the end

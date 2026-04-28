@@ -1,0 +1,6 @@
+i want my to do list  to do :
+
+1. to show the user all the option for the first time 
+2. to contains add, remove, show, quit
+3.
+4.
