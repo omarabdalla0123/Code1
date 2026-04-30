@@ -1,4 +1,6 @@
 import tkinter as tk
+from PIL import Image, ImageTk
+
 
 questions = [
     {"question": "What is the capital of Sudan?", "answers": ["Khartoum", "Wad Madani", "Atbara", "Omdurman"], "correct": "Khartoum"},
@@ -39,6 +41,12 @@ root = tk.Tk()
 root.title("Sudan George Kordahi")
 root.geometry("600x400")
 root.resizable(False, False)
+
+image =  Image.open(r"D:\Code\Python\Tkinter_Library\bg.png")
+image = image.resize((600, 400))
+photo = ImageTk.PhotoImage(image)
+
+
 
 question_label = tk.Label(root, text=questions[0]["question"], bg="#002AFF", fg="white", font=("Arial", 12, "bold"), wraplength=500)
 question_label.place(x=50, y=30)
