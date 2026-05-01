@@ -1,20 +1,23 @@
 import tkinter as tk
-
-
+from tkinter import messagebox
 
 def add():
-    first_num = int(entry.get())
-    second_num = int(entry1.get())
-
-    res = first_num + second_num 
-    label2.config(text = f"Result : {res}")
+    if entry.get() == "" or entry1.get() == "":
+        messagebox.showerror("Empty Field", "First Or Second Number is empty")
+    else:
+        first_num = int(entry.get())
+        second_num = int(entry1.get())
+        res = first_num + second_num
+        messagebox.showinfo("Result", f"Your Result is: {res}")
 
 def substract():
-    first_num = int(entry.get())
-    second_num = int(entry1.get())
-
-    res = first_num - second_num 
-    label2.config(text = f"Result : {res}")
+    if entry.get() == "" or entry1.get() == "":
+        messagebox.showerror("Empty Field", "First Or Second Number is empty")
+    else:
+        first_num = int(entry.get())
+        second_num = int(entry1.get())
+        res = first_num - second_num
+        messagebox.showinfo("Result", f"Your Result is: {res}")  
 
 
 
@@ -47,10 +50,6 @@ button1 = tk.Button(root, text ="Subtract", command = substract)
 button1.place(x= 200, y = 135)
 
 
-
-
-label2 = tk.Label(root, text ="Result :  ")
-label2.place(x= 220, y = 50)
 
 
 
