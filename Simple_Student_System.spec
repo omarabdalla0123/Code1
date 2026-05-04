@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['D:\\Code\\Python\\Tkinter_Library\\Photos\\SSS.ico'],
+    icon=['D:\\Code\\Python\\Tkinter_Library\\Photos\\SSS1.ico'],
 )

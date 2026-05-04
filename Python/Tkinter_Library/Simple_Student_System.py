@@ -142,7 +142,7 @@ co_user_password = "1234"
 root = tk.Tk() 
 root.geometry("500x500")
 root.title("Simple Student System")
-root.iconbitmap(r"D:\Code\Python\Tkinter_Library\Photos\SSS.ico")
+root.iconbitmap(r"D:\Code\Python\Tkinter_Library\Photos\SSS1.ico")
 root.resizable(False,False)
 
 
