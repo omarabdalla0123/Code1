@@ -20,11 +20,32 @@ def substract():
         messagebox.showinfo("Result", f"Your Result is: {res}")  
 
 
+def clear():
+    entry.delete(0,tk.END)
+    entry1.delete(0,tk.END)
+
+def exit():
+    root.quit()
+
+def help():
+    messagebox.showinfo("Help","Simple Calculator made by Omar")
 
 root = tk.Tk()
 
 root.title("Simple Calc")
 root.geometry("500x500")
+
+menubar = tk.Menu(root, tearoff=0)
+root.config(menu=menubar)
+
+file_menu = tk.Menu(menubar, tearoff=0)
+menubar.add_cascade(label = "file", menu = file_menu)
+
+file_menu.add_command(label = "Exist", command = exit)
+file_menu.add_command(label = "Clear", command = clear)
+file_menu.add_command(label = "Help", command = help)
+
+
 
 label = tk.Label(root, text ="First Number")
 label.place(x= 50, y = 80)

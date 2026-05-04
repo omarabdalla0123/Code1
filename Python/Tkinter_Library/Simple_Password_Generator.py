@@ -21,7 +21,7 @@ root.title("Simple Password Generator")
 root.geometry("500x500")
 root.resizable(False,False)
 root.configure(bg="#FFFFFF")
-root.iconbitmap(r"D:\Code\Python\Tkinter_Library\torn.ico")
+#root.iconbitmap(r"D:\Code\Python\Tkinter_Library\torn.ico")
 
 entry = tk.Entry(root)
 entry.pack()
