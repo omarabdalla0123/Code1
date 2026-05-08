@@ -17,9 +17,9 @@ class Container(tk.Tk):
 
         self.frames = {}
 
-        for PageClass in (Page1, Page2):
-            frame = PageClass(container, self)
-            self.frames[PageClass.__name__] = frame
-            frame.grid(row= 0, column = 0, sticky = "nsew")
+      ##  for PageClass in (Page1, Page2):
+        #     frame = PageClass(container, self)
+        #     self.frames[PageClass.__name__] = frame
+        #     frame.grid(row= 0, column = 0, sticky = "nsew")
 
-        self.show_frame("Page")
+        # self.show_frame("Page")
